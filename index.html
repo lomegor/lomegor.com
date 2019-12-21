@@ -1,0 +1,238 @@
+<html>
+<head>
+	<title>Sebastian Ventura</title>
+	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+	html, body {
+		width: 100%;
+		background-color: #eaeaea;
+		font-family: 'Source Code Pro';
+		margin: 0;
+	}
+	#container {
+		background-color: #fefefe;
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0.3em 1.2em 1.2em;
+		box-shadow: 0 0 10px #666;
+		color: #444;
+		font-size: 1.1em;
+	}
+	#container:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	@media (max-width: 864px) {
+		#container {
+			width: 100%;
+			box-shadow: none;
+		}
+	}
+	h1 {
+		margin: 0.3em 0;
+	}
+	h2 {
+		margin: 0.9em 0 0.6em;
+	}
+	p {
+		margin: 0.6em 0;
+	}
+	* {
+		box-sizing: border-box;
+	}
+
+	header h1 {
+		width: 200px;
+		text-align: center;
+		float: left;
+		height: 90px;
+	}
+	header h1 a {
+		text-decoration: none;
+		color: inherit;
+	}
+	header nav {
+		width: calc(100% - 200px);
+		float: right;
+	}
+	header nav > * {
+		float: left;
+		display: block;
+		width: calc(100% / 3);
+		text-decoration: none;
+		text-align: center;
+		height: calc(90px + 0.6em);
+		line-height: calc(100px + 0.6em);
+		color: #4141ff;
+	}
+	header nav > *:hover {
+		color: inherit;
+	}
+	header:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	@media (max-width: 864px) {
+		header nav > * {
+			margin-top: 0.6em;
+			float: none;
+			width: 100%;
+			height: auto;
+			line-height: normal;
+		}
+	}
+
+	#experience {
+		float: left;
+		width: 200px;
+		text-align: center;
+		padding-top: 1em;
+		font-size: 0.9em;
+	}
+	#experience .job {
+		border: 1px solid #bbb;
+		padding: 0.3em;
+		border-radius: 2px;
+	}
+	#experience .job .title {
+		font-weight: bold;
+	}
+	#experience .year:before, #experience .year:after {
+		display: block;
+		content: "|";
+		font-size: 0.7em;
+		color: #bbb;
+	}
+	#experience .year:last-child:after, #experience .year:first-child:before {
+		display: none;
+	}
+	@media (max-width: 864px) {
+		#experience {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	@keyframes width {
+		from {
+			width: 0;
+		}
+	}
+
+	#skills {
+		float: right;
+		width: calc(100% - 220px);
+		margin-left: 20px;
+		padding: 1em;
+		padding-top: 0.7em;
+	}
+	#skills .skill {
+		background-color: rgba(0, 0, 0, 0.1);
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+		padding: 0.3em;
+		overflow-x: visible;
+		white-space: nowrap;
+		animation: width 2s ease-out;
+	}
+	#skills .skill label {
+		display: block;
+		cursor: pointer;
+	}
+	#skills .skill label:hover {
+		font-weight: bold;
+	}
+	#skills .skill label:after {
+		content: "…";
+		display: inline-block;
+		float: right;
+	}
+	#skills .skill .years {
+		font-size: 0.8em;
+		opacity: 0.8;
+	}
+
+	#skills input ~ .skill {
+		max-height: 500px;
+		transition: all 0.2s;
+	}
+	#skills input:checked ~ .skill {
+		max-height: 0;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	@media (max-width: 864px) {
+		#skills {
+			width: 100%;
+			float: none;
+			margin-left: 0;
+		}
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1><a href="mailto:sebastiang.ventura@gmail.com">SEBASTI&Aacute;N VENTURA</a></h1>
+			<nav>
+				<a target="about:blank" href="https://www.linkedin.com/in/sebastiang-ventura/">LinkedIn</a>
+				<a target="about:blank" href="http://github.com/lomegor">GitHub</a>
+				<a target="about:blank" href="https://docs.google.com/document/d/1CzZLWBLd-CksvwiA2sJjIutv1ZFTHNZ4mLkmIygfhUs/edit?usp=sharing">Curriculum</a>
+			</nav>
+		</header>
+		<main>
+			<p>I'm a developer with special interest in "libre" technologies. I excel at problem solving and thinking outside of the box; I like to find the root problem and solve it in the best way possible, even if the root problem is not readily apparent. I want to make a difference in the technological world surrounding us, while also being conscious of the social environment and the current problems that we face as a society.</p>
+			<div id="experience">
+				<div class="year">2007</div>
+				<div class="job"><span class="title">Computer Engineering Bachelor's Degree</span> at Universidad de la República</div>
+				<div class="year">2010</div>
+				<div class="job"><span class="title">Infrastructure Team</span> at Sonda</div>
+				<div class="year">2011</div>
+				<div class="job"><span class="title">Freelance Developer</span></div>
+				<div class="year">2013</div>
+				<div class="job"><span class="title">Javascript Engineer</span> at Monetate</div>
+				<div class="year">2015</div>
+				<div class="job"><span class="title">Senior Javascript Engineer</span> at Monetate</div>
+				<div class="year">2017</div>
+				<div class="job"><span class="title">Team Lead</span> at Monetate</div>
+				<div class="year">2019</div>
+				<div class="job"><span class="title">Technical Lead</span> at Monetate</div>
+			</div>
+			<div id="skills">
+				<div class="skill" style="width: 90%">
+					<label for="javascript">JavaScript <span class="years">(9 years)</span></label>
+					<input type="checkbox" style="display: none" id="javascript" checked="checked">
+					<div class="skill" style="width: 33%">ES6 <span class="years">(3 years)</span></div>
+					<div class="skill" style="width: 100%">jQuery <span class="years">(9 years)</span></div>
+					<div class="skill" style="width: 33%">Node.js <span class="years">(3 years)</span></div>
+					<div class="skill" style="width: 77%">Google Closure <span class="years">(7 years)</span></div>
+					<div class="skill" style="width: 9%">Angular <span class="years">(1 year)</span></div>
+					<div class="skill" style="width: 9%">React <span class="years">(1 year)</span></div>
+				</div>
+				<div class="skill" style="width: 90%">
+					<label for="css">CSS <span class="years">(9 years)</span></label>
+					<input type="checkbox" style="display: none" id="css" checked="checked">
+					<div class="skill" style="width: 9%">less <span class="years">(1 year)</span></div>
+				</div>
+				<div class="skill" style="width: 90%">HTML5 <span class="years">(9 years)</span></div>
+				<div class="skill" style="width: 100%">
+					<label for="shell">shell <span class="years">(10 years)</span></label>
+					<input type="checkbox" style="display: none" id="shell" checked="checked">
+					<div class="skill" style="width: 50%">zsh <span class="years">(5 years)</span></div>
+					<div class="skill" style="width: 70%">bash <span class="years">(7 years)</span></div>
+				</div>
+				<div class="skill" style="width: 90%">git <span class="years">(9 years)</span></div>
+				<div class="skill" style="width: 20%">PHP <span class="years">(2 years)</span></div>
+				<div class="skill" style="width: 20%">Python <span class="years">(2 years)</span></div>
+				<div class="skill" style="width: 10%">Perl <span class="years">(1 years)</span></div>
+				<div class="skill" style="width: 10%">MongoDB <span class="years">(1 year)</span></div>
+				<div class="skill" style="width: 10%">MariaDB <span class="years">(1 year)</span></div>
+			</div>
+		</main>
+  </div>
+</body>
+</html>
