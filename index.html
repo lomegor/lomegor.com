@@ -134,37 +134,21 @@
 		margin-top: 0.3em;
 		margin-bottom: 0.3em;
 		padding: 0.3em;
+		border-radius: 4px;
 		overflow-x: visible;
 		white-space: nowrap;
 		animation: width 2s ease-out;
 	}
-	#skills .skill label {
+	#skills .skill h3 {
 		display: block;
-		cursor: pointer;
-	}
-	#skills .skill label:hover {
-		font-weight: bold;
-	}
-	#skills .skill label:after {
-		content: "…";
-		display: inline-block;
-		float: right;
+		margin: 0;
+        font-size: 14px;
 	}
 	#skills .skill .years {
 		font-size: 0.8em;
 		opacity: 0.8;
 	}
 
-	#skills input ~ .skill {
-		max-height: 500px;
-		transition: all 0.2s;
-	}
-	#skills input:checked ~ .skill {
-		max-height: 0;
-		overflow: hidden;
-		padding: 0;
-		margin: 0;
-	}
 	@media (max-width: 864px) {
 		#skills {
 			width: 100%;
@@ -185,55 +169,52 @@
 			</nav>
 		</header>
 		<main>
-			<p>I'm a developer with special interest in "libre" technologies. I excel at problem solving and thinking outside of the box; I like to find the root problem and solve it in the best way possible, even if the root problem is not readily apparent. I want to make a difference in the technological world surrounding us, while also being conscious of the social environment and the current problems that we face as a society.</p>
+			<p>I'm a Senior Software Engineer with 14 years experience. I have a special interest in how software is integrated into our lives, as we've recently seen with the rise of AI and other technological advancements. I want to make a difference in the technological world surrounding us, while also being conscious of the social environment and the current problems that we face as a society.</p>
 			<div id="experience">
-				<div class="year">2007</div>
-				<div class="job"><span class="title">Computer Engineering Bachelor's Degree</span> at Universidad de la República</div>
-				<div class="year">2010</div>
-				<div class="job"><span class="title">Infrastructure Team</span> at Sonda</div>
-				<div class="year">2011</div>
-				<div class="job"><span class="title">Freelance Developer</span></div>
-				<div class="year">2013</div>
-				<div class="job"><span class="title">Javascript Engineer</span> at Monetate</div>
-				<div class="year">2015</div>
-				<div class="job"><span class="title">Senior Javascript Engineer</span> at Monetate</div>
-				<div class="year">2017</div>
-				<div class="job"><span class="title">Team Lead</span> at Monetate</div>
-				<div class="year">2019</div>
-				<div class="job"><span class="title">Technical Lead</span> at Monetate</div>
-				<div class="year">2021</div>
-				<div class="job"><span class="title">Frontend Engineer</span> at Mention Me</div>
-				<div class="year">2022</div>
 				<div class="job"><span class="title">Lead Frontend Engineer</span> at Mention Me</div>
+				<div class="year">2022</div>
+				<div class="job"><span class="title">Frontend Engineer</span> at Mention Me</div>
+				<div class="year">2021</div>
+				<div class="job"><span class="title">Technical Lead</span> at Monetate</div>
+				<div class="year">2019</div>
+				<div class="job"><span class="title">Team Lead</span> at Monetate</div>
+				<div class="year">2017</div>
+				<div class="job"><span class="title">Senior Javascript Engineer</span> at Monetate</div>
+				<div class="year">2015</div>
+				<div class="job"><span class="title">Javascript Engineer</span> at Monetate</div>
+				<div class="year">2013</div>
+				<div class="job"><span class="title">Freelance Developer</span></div>
+				<div class="year">2011</div>
+				<div class="job"><span class="title">Infrastructure Team</span> at Sonda</div>
+				<div class="year">2010</div>
+				<div class="job"><span class="title">Computer Engineering Bachelor's Degree</span> at Universidad de la República</div>
+				<div class="year">2007</div>
 			</div>
 			<div id="skills">
 				<div class="skill" style="width: 100%">
-					<label for="javascript">JavaScript <span class="years">(12 years)</span></label>
-					<input type="checkbox" style="display: none" id="javascript" checked="checked">
-					<div class="skill" style="width: 33%">React <span class="years">(3 years)</span></div>
-					<div class="skill" style="width: 33%">Typescript <span class="years">(3 years)</span></div>
-					<div class="skill" style="width: 46%">ES6 <span class="years">(5 years)</span></div>
-					<div class="skill" style="width: 100%">jQuery <span class="years">(12 years)</span></div>
-					<div class="skill" style="width: 46%">Node.js <span class="years">(5 years)</span></div>
-					<div class="skill" style="width: 60%">Google Closure <span class="years">(7 years)</span></div>
+					<h3>JavaScript <span class="years">(13 years)</span></h3>
+					<div class="skill" style="width: 33%">React <span class="years">(4 years)</span></div>
+					<div class="skill" style="width: 33%">Typescript <span class="years">(4 years)</span></div>
+					<div class="skill" style="width: 46%">ES6 <span class="years">(6 years)</span></div>
+					<div class="skill" style="width: 100%">jQuery <span class="years">(13 years)</span></div>
+					<div class="skill" style="width: 46%">Node.js <span class="years">(6 years)</span></div>
+					<div class="skill" style="width: 60%">Google Closure <span class="years">(8 years)</span></div>
 				</div>
 				<div class="skill" style="width: 100%">
-					<label for="css">CSS <span class="years">(12 years)</span></label>
-					<input type="checkbox" style="display: none" id="css" checked="checked">
-					<div class="skill" style="width: 25%">less <span class="years">(3 year)</span></div>
+					<h3>CSS <span class="years">(13 years)</span></h3>
+					<div class="skill" style="width: 25%">less <span class="years">(4 year)</span></div>
 				</div>
-				<div class="skill" style="width: 100%">HTML5 <span class="years">(12 years)</span></div>
+				<div class="skill" style="width: 100%">HTML5 <span class="years">(13 years)</span></div>
 				<div class="skill" style="width: 80%">
-					<label for="shell">shell <span class="years">(10 years)</span></label>
-					<input type="checkbox" style="display: none" id="shell" checked="checked">
-					<div class="skill" style="width: 50%">zsh <span class="years">(5 years)</span></div>
-					<div class="skill" style="width: 70%">bash <span class="years">(7 years)</span></div>
+					<h3 for="shell">shell <span class="years">(11 years)</span></h3>
+					<div class="skill" style="width: 50%">zsh <span class="years">(6 years)</span></div>
+					<div class="skill" style="width: 70%">bash <span class="years">(8 years)</span></div>
 				</div>
-				<div class="skill" style="width: 100%">git <span class="years">(9 years)</span></div>
-				<div class="skill" style="width: 30%">jest <span class="years">(3 years)</span></div>
-				<div class="skill" style="width: 40%">PHP <span class="years">(4 years)</span></div>
-				<div class="skill" style="width: 20%">Python <span class="years">(2 years)</span></div>
-				<div class="skill" style="width: 30%">MySQL <span class="years">(3 years)</span></div>
+				<div class="skill" style="width: 100%">git <span class="years">(10 years)</span></div>
+				<div class="skill" style="width: 30%">jest <span class="years">(4 years)</span></div>
+				<div class="skill" style="width: 40%">PHP <span class="years">(5 years)</span></div>
+				<div class="skill" style="width: 20%">Python <span class="years">(3 years)</span></div>
+				<div class="skill" style="width: 30%">MySQL <span class="years">(4 years)</span></div>
 			</div>
 		</main>
   </div>
